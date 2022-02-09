@@ -1,0 +1,37 @@
+test react components with jest
+
+overordnet 0702 1730
+
+litt spennende å se at det oppdaterte anbefalingene er slik testingen til Nils har blitt gjort i REN. :D
+
+msw - mock http
+
+Kent foretrekker å samle tester.
+finnes det en måte å lett få oversikt over alle tester og samtidig kunne se hvilke komponenter de tester?
+
+Å teste oppførsel heller enn implementasjonsdetaljer er et viktig poeng - tillater refaktorering med tillit, som er 60% av poenget med tester (20 dokumentasjon, 20 som en tydeligere spesifikasjon under utvikling )
+
+å ha "magiske" importer på den måten ( webpack satt opp til automatisk fikse expect.expand ) tror jeg er problematisk om noe går galt. Man skjuler hva som faktisk skjer bak "magi".
+
+debug function er nyttig
+
+ooh, props-testing
+	veldig rett fram med rerender
+
+throwing on get-feil, bruk query isteden om feil er ønsket
+
+veldig greit innsyn i hvordan jest kan extendes på egen hånd.
+
+nyttig å vite at det er mulig å overskrive innebygd oppførsel
+	veldig bra tips å sjekke hvor mange ganger mocks har blitt kalt osv
+	rekkefølgen på beforeAll, afterAll og afterEach burde ha each i midten for lesbarhet
+
+clear vs restore, hvilket er det bedre begrepet?
+
+
+react-transition-group, greit å mocke ut bruk av biblioteker. Grei filosofi å ikke teste biblioteker man er avhengig av og anta de gjør det riktige
+
+jest.mock er powerful. Du definerer et arbitrært api med retur-objektet ditt :thinking-face:
+	_og_ det overskriver alle imports i komponenter du bruker :O
+
+bra poeng, igjen, å verifisere hvordan mock-funksjonene dine blir interagert med
